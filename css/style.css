@@ -1,0 +1,332 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+*,*:before,*:after{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	font-family: '微軟正黑體', Verdana, sans-serif;
+	background: #fff;
+}
+.wrap {
+	width: 1024px;
+	margin: 0 auto;
+}
+.topbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: #f1f1f1;
+	height: 30px;
+	padding-right: 10px;
+}
+.topbar li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.topbar li a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.topbar li img {
+	padding-right: 5px;
+}
+.topbar .facebook {
+	border-right: 2px solid #DBDBDB;
+}
+.facebook a {
+	color: #4460A0;
+}
+.twitter a {
+	color: #00AAEC;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.header h1 a {
+	display: block;
+	width: 224px;
+	height: 50px;
+	background-image: url(../image/logo.png);
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.topmenu {
+	display: flex;
+	z-index: 99;
+	padding-right: 11px;
+}
+.topmenu li {
+	height: 50px;
+	text-align: center;
+}
+.topmenu > li a {
+	display: block;
+	line-height: 47px;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #00CC99;
+	font-weight: bold;
+	border-bottom: 3px solid transparent;
+}
+.topmenu > li > a:hover , .topmenu > li span a:hover {
+	border-bottom: 3px solid #00CC99;
+}
+.topmenu > li > a.active {
+	background: #E1E1E1;
+	border-bottom: 3px solid #00CC99;
+}
+.topmenu ul {
+	display: none;
+	background: #fff;
+}
+.topmenu ul li {
+	border-bottom: 1px solid #F1F1F1;
+}
+.topmenu ul li a:hover {
+	background: #00CC99;
+	color: #fff;
+}
+.banner {
+	max-width: 1024px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 70px;
+	position: relative;
+}
+.banner .bannertext {
+	display: flex;
+	align-items: center;
+	width: 1025px;
+	height: 200px;
+	background: rgb(0, 0, 0,0.2);
+	position: absolute;
+	top: 180px;
+	z-index: 5;
+}
+.banner .bannertext h2 {
+	color: #fff;
+	font-size: 30px;
+	line-height: 40px;
+	padding-left: 45px;
+}
+.swiper-container {
+	width: 1024px;
+	height: 560px;
+}
+.swiper-pagination-bullet-active {
+	background: #fff;
+}
+.lightboxOverlay {
+	background: #406278;
+	opacity: 0.8;
+}
+.lb-data .lb-caption {
+	color: #F1F1F1;
+}
+.course {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.coursebox {
+	width: 300px;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 3px 3px #DBDBDB;
+}
+.courseimg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+.coursebox h3 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.coursebox p,li {
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.coursebox li {
+	list-style: square;
+	margin-left: 25px;
+}
+.compare {
+	margin-bottom: 70px;
+}
+.compare h3 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.compare table {
+	width: 800px;
+	margin: 20px auto;
+	text-align: left;
+	line-height: 35px;
+}
+.compare th {
+	font-weight: bold;
+	border-top: 2px solid #DBDBDB;
+	border-bottom: 2px solid #DBDBDB;
+	background: #f1f1f1;
+	padding-left: 20px;
+}
+.compare td {
+	border-bottom: 1px solid #DBDBDB;
+	padding-left: 20px;
+}
+.compare .better {
+	color: rgb(3, 163, 150);
+	font-weight: bold;
+}
+.refer {
+	background: linear-gradient(#004E48,#007F68);
+}
+.refer h3 {
+	color: #fff;
+	font-size: 24px;
+	padding-top: 30px;
+	text-align: center;
+	line-height: 35px;
+}
+.refer .referbox {
+	display: flex;
+}
+.refer textarea {
+	height: 250px;
+	width: 460px;
+	border-radius: 5px;
+	margin: 20px;
+}
+.refer .guestdata {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: #fff;
+	margin: 20px;
+}
+.guestdata .guestdataitem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 52px;
+	margin-bottom: 18px;
+}
+.refer input {
+	width: 460px;
+	font-family: '微軟正黑體', Verdana, sans-serif;
+	font-size: 14px;
+	border-radius: 3px;
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: none;
+}
+.refer input:focus {
+	box-shadow: 0 0 3px 2px #00AD8E;
+}
+.refer textarea:focus {
+	box-shadow: 0 0 3px 2px #00AD8E;
+}
+.refer .btn {
+	width: 80px;
+	height: 35px;
+	font-family: '微軟正黑體', Verdana, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	background: #00AD8E;
+	border: none;
+	cursor: pointer;
+}
+.refer .btn:hover {
+	background: #ADFEDF;
+	color: #00AD8E;
+}
+.refer .btn:active {
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+}
+.footer .contact {
+	color: #C56A8B;
+}
+.top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
